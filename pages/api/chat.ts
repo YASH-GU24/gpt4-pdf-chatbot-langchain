@@ -33,8 +33,7 @@ export default async function handler(
       new OpenAIEmbeddings({}),
       {
         pineconeIndex: index,
-        textKey: 'text',
-        namespace: PINECONE_NAME_SPACE, //namespace comes from your config folder
+        textKey: 'Chunks of 500 words (approx)'
       },
     );
 

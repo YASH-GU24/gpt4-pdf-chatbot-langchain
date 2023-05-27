@@ -195,7 +195,9 @@ export default function Home() {
                                       {doc.pageContent}
                                     </ReactMarkdown>
                                     <p className="mt-2">
-                                      <b>Source:</b> {doc.metadata.source}
+                                      <b>File Name</b> {doc.metadata['File Name']}
+                                      <br></br>
+                                      <b>Pages</b> {doc.metadata['Page']}
                                     </p>
                                   </AccordionContent>
                                 </AccordionItem>
@@ -262,7 +264,7 @@ export default function Home() {
         </div>
         <footer className="m-auto p-4">
           <a href="https://twitter.com/mayowaoshin">
-            Powered by LangChainAI. Demo built by Mayo (Twitter: @mayowaoshin).
+            Powered by LangChainAI. Demo built for Rob
           </a>
         </footer>
       </Layout>
